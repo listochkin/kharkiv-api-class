@@ -10,5 +10,9 @@
   "license": "ISC",
   "dependencies": {
     "engine.io-stream": "^0.4.3"
+  },
+  "devDependencies": {
+    "chai": "^1.10.0",
+    "mocha": "^2.0.1"
   }
 }
