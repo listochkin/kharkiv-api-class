@@ -4,7 +4,10 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "subtask1": "a & b",
+    "task": "subtask1 && subtask2",
+    "watch": "mocha watch --recursive --reporter min --timeout 10000",
+    "test": "mocha --recursive --reporter nyan --timeout 10000"
   },
   "author": "",
   "license": "ISC",
