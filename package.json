@@ -13,8 +13,13 @@
   "license": "ISC",
   "dependencies": {
     "browserify": "^7.0.0",
+    "container-el": "0.0.1",
     "engine.io-stream": "^0.4.3",
-    "express": "^4.10.6"
+    "express": "^4.10.6",
+    "level-live-stream": "^1.4.9",
+    "levelup": "^0.19.0",
+    "memdown": "^1.0.0",
+    "multilevel": "^6.0.1"
   },
   "devDependencies": {
     "chai": "^1.10.0",

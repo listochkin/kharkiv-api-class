@@ -1,35 +1,238 @@
 0 info it worked if it ends with ok
 1 verbose cli [ '/home/action/.n/bin/node',
 1 verbose cli   '/home/action/.n/bin/npm',
-1 verbose cli   'run',
-1 verbose cli   'watch' ]
+1 verbose cli   'i',
+1 verbose cli   '-S',
+1 verbose cli   'container-el',
+1 verbose cli   'level-live-stream',
+1 verbose cli   'miltilevel' ]
 2 info using npm@2.0.0
 3 info using node@v0.11.14
-4 verbose run-script [ 'prewatch', 'watch', 'postwatch' ]
-5 info prewatch kharkiv-apis@1.0.0
-6 info watch kharkiv-apis@1.0.0
-7 verbose unsafe-perm in lifecycle true
-8 info kharkiv-apis@1.0.0 Failed to exec watch script
-9 verbose stack Error: Exit status 1
-9 verbose stack     at ChildProcess.<anonymous> (/home/action/.n/lib/node_modules/npm/lib/utils/lifecycle.js:212:16)
-9 verbose stack     at ChildProcess.emit (events.js:110:17)
-9 verbose stack     at maybeClose (child_process.js:1000:16)
-9 verbose stack     at Process.ChildProcess._handle.onexit (child_process.js:1072:5)
-10 verbose pkgid kharkiv-apis@1.0.0
-11 verbose cwd /home/action/workspace/kharkiv-apis
-12 error Linux 3.13.4
-13 error argv "/home/action/.n/bin/node" "/home/action/.n/bin/npm" "run" "watch"
-14 error node v0.11.14
-15 error npm  v2.0.0
-16 error code ELIFECYCLE
-17 error kharkiv-apis@1.0.0 watch: `mocha watch --harmony --recursive --reporter min --timeout 10000`
-17 error Exit status 1
-18 error Failed at the kharkiv-apis@1.0.0 watch script.
-18 error This is most likely a problem with the kharkiv-apis package,
-18 error not with npm itself.
-18 error Tell the author that this fails on your system:
-18 error     mocha watch --harmony --recursive --reporter min --timeout 10000
-18 error You can get their info via:
-18 error     npm owner ls kharkiv-apis
-18 error There is likely additional logging output above.
-19 verbose exit [ 1, true ]
+4 warn package.json kharkiv-apis@1.0.0 No description
+5 warn package.json kharkiv-apis@1.0.0 No repository field.
+6 warn package.json kharkiv-apis@1.0.0 No README data
+7 verbose readDependencies using package.json deps
+8 verbose cache add [ 'container-el@0.0.1', null ]
+9 verbose cache add spec="container-el@0.0.1" args=["container-el@0.0.1",null]
+10 verbose parsed spec { raw: 'container-el@0.0.1',
+10 verbose parsed spec   scope: null,
+10 verbose parsed spec   name: 'container-el',
+10 verbose parsed spec   rawSpec: '0.0.1',
+10 verbose parsed spec   spec: '0.0.1',
+10 verbose parsed spec   type: 'version' }
+11 verbose cache add [ 'level-live-stream@^1.4.9', null ]
+12 verbose cache add spec="level-live-stream@^1.4.9" args=["level-live-stream@^1.4.9",null]
+13 verbose parsed spec { raw: 'level-live-stream@^1.4.9',
+13 verbose parsed spec   scope: null,
+13 verbose parsed spec   name: 'level-live-stream',
+13 verbose parsed spec   rawSpec: '^1.4.9',
+13 verbose parsed spec   spec: '>=1.4.9 <2.0.0',
+13 verbose parsed spec   type: 'range' }
+14 verbose cache add [ 'miltilevel', null ]
+15 verbose cache add spec="miltilevel" args=["miltilevel",null]
+16 verbose parsed spec { raw: 'miltilevel',
+16 verbose parsed spec   scope: null,
+16 verbose parsed spec   name: 'miltilevel',
+16 verbose parsed spec   rawSpec: '',
+16 verbose parsed spec   spec: '*',
+16 verbose parsed spec   type: 'range' }
+17 verbose parsed spec { raw: 'container-el@0.0.1',
+17 verbose parsed spec   scope: null,
+17 verbose parsed spec   name: 'container-el',
+17 verbose parsed spec   rawSpec: '0.0.1',
+17 verbose parsed spec   spec: '0.0.1',
+17 verbose parsed spec   type: 'version' }
+18 verbose addNamed [ 'container-el', '0.0.1' ]
+19 verbose addNamed [ '0.0.1', '0.0.1' ]
+20 verbose parsed spec { raw: 'level-live-stream@^1.4.9',
+20 verbose parsed spec   scope: null,
+20 verbose parsed spec   name: 'level-live-stream',
+20 verbose parsed spec   rawSpec: '^1.4.9',
+20 verbose parsed spec   spec: '>=1.4.9 <2.0.0',
+20 verbose parsed spec   type: 'range' }
+21 verbose addNamed [ 'level-live-stream', '>=1.4.9 <2.0.0' ]
+22 verbose addNamed [ null, '>=1.4.9 <2.0.0' ]
+23 verbose parsed spec { raw: 'miltilevel',
+23 verbose parsed spec   scope: null,
+23 verbose parsed spec   name: 'miltilevel',
+23 verbose parsed spec   rawSpec: '',
+23 verbose parsed spec   spec: '*',
+23 verbose parsed spec   type: 'range' }
+24 verbose addNamed [ 'miltilevel', '*' ]
+25 verbose addNamed [ null, '*' ]
+26 silly lockFile 7eb164d9-container-el-0-0-1 container-el@0.0.1
+27 verbose lock container-el@0.0.1 /home/action/.npm/7eb164d9-container-el-0-0-1.lock
+28 silly lockFile 4e78bfcb-level-live-stream-1-4-9-2-0-0 level-live-stream@>=1.4.9 <2.0.0
+29 verbose lock level-live-stream@>=1.4.9 <2.0.0 /home/action/.npm/4e78bfcb-level-live-stream-1-4-9-2-0-0.lock
+30 silly lockFile ac692313-miltilevel miltilevel@*
+31 verbose lock miltilevel@* /home/action/.npm/ac692313-miltilevel.lock
+32 verbose mapToRegistry name container-el
+33 verbose mapToRegistry uri https://registry.npmjs.org/container-el
+34 silly addNameRange { name: 'level-live-stream',
+34 silly addNameRange   range: '>=1.4.9 <2.0.0',
+34 silly addNameRange   hasData: false }
+35 verbose mapToRegistry name level-live-stream
+36 verbose mapToRegistry uri https://registry.npmjs.org/level-live-stream
+37 silly addNameRange { name: 'miltilevel', range: '*', hasData: false }
+38 verbose mapToRegistry name miltilevel
+39 verbose mapToRegistry uri https://registry.npmjs.org/miltilevel
+40 verbose request on initialization, where is /miltilevel
+41 verbose request after pass 1, where is /miltilevel
+42 verbose request url raw /miltilevel
+43 verbose request resolving registry [ 'https://registry.npmjs.org/', './miltilevel' ]
+44 verbose request after pass 2, where is https://registry.npmjs.org/miltilevel
+45 verbose request no auth needed
+46 info attempt registry request try #1 at 15:09:42
+47 verbose request id dca659e96cfe2b4b
+48 http request GET https://registry.npmjs.org/miltilevel
+49 verbose request on initialization, where is /container-el
+50 verbose request after pass 1, where is /container-el
+51 verbose request url raw /container-el
+52 verbose request resolving registry [ 'https://registry.npmjs.org/', './container-el' ]
+53 verbose request after pass 2, where is https://registry.npmjs.org/container-el
+54 verbose request no auth needed
+55 info attempt registry request try #1 at 15:09:42
+56 verbose etag "6IXEBJHT54L6ZK740TCGGRA6F"
+57 http request GET https://registry.npmjs.org/container-el
+58 verbose request on initialization, where is /level-live-stream
+59 verbose request after pass 1, where is /level-live-stream
+60 verbose request url raw /level-live-stream
+61 verbose request resolving registry [ 'https://registry.npmjs.org/', './level-live-stream' ]
+62 verbose request after pass 2, where is https://registry.npmjs.org/level-live-stream
+63 verbose request no auth needed
+64 info attempt registry request try #1 at 15:09:42
+65 verbose etag "7V5DXYEALTRSQ23QV31AU5J32"
+66 http request GET https://registry.npmjs.org/level-live-stream
+67 http 304 https://registry.npmjs.org/level-live-stream
+68 silly registry.get cb [ 304,
+68 silly registry.get   { date: 'Sat, 13 Dec 2014 15:09:42 GMT',
+68 silly registry.get     server: 'Apache',
+68 silly registry.get     via: '1.1 varnish',
+68 silly registry.get     'last-modified': 'Sat, 13 Dec 2014 15:09:42 GMT',
+68 silly registry.get     'cache-control': 'max-age=60',
+68 silly registry.get     etag: '"7V5DXYEALTRSQ23QV31AU5J32"',
+68 silly registry.get     age: '30',
+68 silly registry.get     'x-served-by': 'cache-lcy1125-LCY',
+68 silly registry.get     'x-cache': 'HIT',
+68 silly registry.get     'x-cache-hits': '1',
+68 silly registry.get     'x-timer': 'S1418483382.525663,VS0,VE0',
+68 silly registry.get     vary: 'Accept',
+68 silly registry.get     'content-length': '0',
+68 silly registry.get     connection: 'close' } ]
+69 verbose etag https://registry.npmjs.org/level-live-stream from cache
+70 http 304 https://registry.npmjs.org/container-el
+71 silly registry.get cb [ 304,
+71 silly registry.get   { date: 'Sat, 13 Dec 2014 15:09:42 GMT',
+71 silly registry.get     server: 'Apache',
+71 silly registry.get     via: '1.1 varnish',
+71 silly registry.get     'last-modified': 'Sat, 13 Dec 2014 15:09:42 GMT',
+71 silly registry.get     'cache-control': 'max-age=60',
+71 silly registry.get     etag: '"6IXEBJHT54L6ZK740TCGGRA6F"',
+71 silly registry.get     age: '30',
+71 silly registry.get     'x-served-by': 'cache-lcy1131-LCY',
+71 silly registry.get     'x-cache': 'HIT',
+71 silly registry.get     'x-cache-hits': '1',
+71 silly registry.get     'x-timer': 'S1418483382.527057,VS0,VE0',
+71 silly registry.get     vary: 'Accept',
+71 silly registry.get     'content-length': '0',
+71 silly registry.get     connection: 'close' } ]
+72 verbose etag https://registry.npmjs.org/container-el from cache
+73 silly addNameRange number 2 { name: 'level-live-stream',
+73 silly addNameRange   range: '>=1.4.9 <2.0.0',
+73 silly addNameRange   hasData: true }
+74 silly addNameRange versions [ 'level-live-stream',
+74 silly addNameRange   [ '0.0.1',
+74 silly addNameRange     '0.0.2',
+74 silly addNameRange     '0.0.3',
+74 silly addNameRange     '0.0.4',
+74 silly addNameRange     '0.1.0',
+74 silly addNameRange     '0.1.1',
+74 silly addNameRange     '1.0.0',
+74 silly addNameRange     '1.0.1',
+74 silly addNameRange     '1.0.2',
+74 silly addNameRange     '1.1.0',
+74 silly addNameRange     '1.1.1',
+74 silly addNameRange     '1.1.2',
+74 silly addNameRange     '1.1.3',
+74 silly addNameRange     '1.1.4',
+74 silly addNameRange     '1.1.5',
+74 silly addNameRange     '1.2.0',
+74 silly addNameRange     '1.3.0',
+74 silly addNameRange     '1.4.0',
+74 silly addNameRange     '1.4.1',
+74 silly addNameRange     '1.4.2',
+74 silly addNameRange     '1.4.3',
+74 silly addNameRange     '1.4.4',
+74 silly addNameRange     '1.4.5',
+74 silly addNameRange     '1.4.6',
+74 silly addNameRange     '1.4.7',
+74 silly addNameRange     '1.4.8',
+74 silly addNameRange     '1.4.9' ] ]
+75 verbose addNamed [ 'level-live-stream', '1.4.9' ]
+76 verbose addNamed [ '1.4.9', '1.4.9' ]
+77 silly lockFile ee1b1ea6-level-live-stream-1-4-9 level-live-stream@1.4.9
+78 verbose lock level-live-stream@1.4.9 /home/action/.npm/ee1b1ea6-level-live-stream-1-4-9.lock
+79 silly lockFile 7eb164d9-container-el-0-0-1 container-el@0.0.1
+80 silly lockFile 7eb164d9-container-el-0-0-1 container-el@0.0.1
+81 silly lockFile ee1b1ea6-level-live-stream-1-4-9 level-live-stream@1.4.9
+82 silly lockFile ee1b1ea6-level-live-stream-1-4-9 level-live-stream@1.4.9
+83 silly lockFile 4e78bfcb-level-live-stream-1-4-9-2-0-0 level-live-stream@>=1.4.9 <2.0.0
+84 silly lockFile 4e78bfcb-level-live-stream-1-4-9-2-0-0 level-live-stream@>=1.4.9 <2.0.0
+85 http 404 https://registry.npmjs.org/miltilevel
+86 verbose headers { date: 'Sat, 13 Dec 2014 15:09:42 GMT',
+86 verbose headers   server: 'CouchDB/1.5.0 (Erlang OTP/R14B04)',
+86 verbose headers   'content-type': 'application/json',
+86 verbose headers   'cache-control': 'max-age=0',
+86 verbose headers   'content-length': '52',
+86 verbose headers   'accept-ranges': 'bytes',
+86 verbose headers   via: '1.1 varnish',
+86 verbose headers   age: '0',
+86 verbose headers   'x-served-by': 'cache-lcy1122-LCY',
+86 verbose headers   'x-cache': 'MISS',
+86 verbose headers   'x-cache-hits': '0',
+86 verbose headers   'x-timer': 'S1418483382.528835,VS0,VE351',
+86 verbose headers   connection: 'close' }
+87 silly registry.get cb [ 404,
+87 silly registry.get   { date: 'Sat, 13 Dec 2014 15:09:42 GMT',
+87 silly registry.get     server: 'CouchDB/1.5.0 (Erlang OTP/R14B04)',
+87 silly registry.get     'content-type': 'application/json',
+87 silly registry.get     'cache-control': 'max-age=0',
+87 silly registry.get     'content-length': '52',
+87 silly registry.get     'accept-ranges': 'bytes',
+87 silly registry.get     via: '1.1 varnish',
+87 silly registry.get     age: '0',
+87 silly registry.get     'x-served-by': 'cache-lcy1122-LCY',
+87 silly registry.get     'x-cache': 'MISS',
+87 silly registry.get     'x-cache-hits': '0',
+87 silly registry.get     'x-timer': 'S1418483382.528835,VS0,VE351',
+87 silly registry.get     connection: 'close' } ]
+88 silly lockFile ac692313-miltilevel miltilevel@*
+89 silly lockFile ac692313-miltilevel miltilevel@*
+90 verbose stack Error: 404 Not Found: miltilevel
+90 verbose stack     at RegClient.<anonymous> (/home/action/.n/lib/node_modules/npm/node_modules/npm-registry-client/lib/request.js:259:14)
+90 verbose stack     at Request._callback (/home/action/.n/lib/node_modules/npm/node_modules/npm-registry-client/lib/request.js:198:65)
+90 verbose stack     at Request.self.callback (/home/action/.n/lib/node_modules/npm/node_modules/request/request.js:236:22)
+90 verbose stack     at Request.emit (events.js:110:17)
+90 verbose stack     at Request.<anonymous> (/home/action/.n/lib/node_modules/npm/node_modules/request/request.js:1142:14)
+90 verbose stack     at Request.emit (events.js:129:20)
+90 verbose stack     at IncomingMessage.<anonymous> (/home/action/.n/lib/node_modules/npm/node_modules/request/request.js:1096:12)
+90 verbose stack     at IncomingMessage.emit (events.js:129:20)
+90 verbose stack     at _stream_readable.js:907:16
+90 verbose stack     at process._tickCallback (node.js:372:11)
+91 verbose statusCode 404
+92 verbose pkgid miltilevel
+93 verbose cwd /home/action/workspace/kharkiv-apis
+94 error Linux 3.13.4
+95 error argv "/home/action/.n/bin/node" "/home/action/.n/bin/npm" "i" "-S" "container-el" "level-live-stream" "miltilevel"
+96 error node v0.11.14
+97 error npm  v2.0.0
+98 error code E404
+99 error 404 Not Found: miltilevel
+99 error 404
+99 error 404 'miltilevel' is not in the npm registry.
+99 error 404 You should bug the author to publish it (or use the name yourself!)
+99 error 404 It was specified as a dependency of 'kharkiv-apis'
+99 error 404
+99 error 404 Note that you can also install from a
+99 error 404 tarball, folder, http url, or git url.
+100 verbose exit [ 1, true ]
