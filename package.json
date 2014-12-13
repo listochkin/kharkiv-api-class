@@ -12,7 +12,9 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
-    "engine.io-stream": "^0.4.3"
+    "browserify": "^7.0.0",
+    "engine.io-stream": "^0.4.3",
+    "express": "^4.10.6"
   },
   "devDependencies": {
     "chai": "^1.10.0",

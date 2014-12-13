@@ -1,0 +1,35 @@
+0 info it worked if it ends with ok
+1 verbose cli [ '/home/action/.n/bin/node',
+1 verbose cli   '/home/action/.n/bin/npm',
+1 verbose cli   'run',
+1 verbose cli   'watch' ]
+2 info using npm@2.0.0
+3 info using node@v0.11.14
+4 verbose run-script [ 'prewatch', 'watch', 'postwatch' ]
+5 info prewatch kharkiv-apis@1.0.0
+6 info watch kharkiv-apis@1.0.0
+7 verbose unsafe-perm in lifecycle true
+8 info kharkiv-apis@1.0.0 Failed to exec watch script
+9 verbose stack Error: Exit status 1
+9 verbose stack     at ChildProcess.<anonymous> (/home/action/.n/lib/node_modules/npm/lib/utils/lifecycle.js:212:16)
+9 verbose stack     at ChildProcess.emit (events.js:110:17)
+9 verbose stack     at maybeClose (child_process.js:1000:16)
+9 verbose stack     at Process.ChildProcess._handle.onexit (child_process.js:1072:5)
+10 verbose pkgid kharkiv-apis@1.0.0
+11 verbose cwd /home/action/workspace/kharkiv-apis
+12 error Linux 3.13.4
+13 error argv "/home/action/.n/bin/node" "/home/action/.n/bin/npm" "run" "watch"
+14 error node v0.11.14
+15 error npm  v2.0.0
+16 error code ELIFECYCLE
+17 error kharkiv-apis@1.0.0 watch: `mocha watch --harmony --recursive --reporter min --timeout 10000`
+17 error Exit status 1
+18 error Failed at the kharkiv-apis@1.0.0 watch script.
+18 error This is most likely a problem with the kharkiv-apis package,
+18 error not with npm itself.
+18 error Tell the author that this fails on your system:
+18 error     mocha watch --harmony --recursive --reporter min --timeout 10000
+18 error You can get their info via:
+18 error     npm owner ls kharkiv-apis
+18 error There is likely additional logging output above.
+19 verbose exit [ 1, true ]
