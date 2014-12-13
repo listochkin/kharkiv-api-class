@@ -1,4 +1,4 @@
-/* jshint node:true, mocha:true, eqnull:true */
+/* jshint node:true, mocha:true, eqnull:true, esnext:true */
 'use strict';
 
 var chai = require('chai'),
@@ -11,7 +11,7 @@ var jsdom = require("jsdom");
 describe('Simple Node tests', function () {
 
   it('should pass', function () {
-//     assert(1 === '1', 'WHA?');
+    assert(1 == '1', 'WHA?');
     expect(1).to.equal(1);
   });
 
@@ -26,13 +26,7 @@ describe('Simple Node tests', function () {
 
 describe('Http tests', function () {
 
-// <div id="home-stats">
-//       <div class="stat icon-package-hex">
-//         <strong class="pretty-number">112023</strong>
-//         total packages
-//       </div>
-
-  it('Should load # of packages', function (done) {
+  it('Should load # of releases', function (done) {
     request('http://nodejs.org/dist/', function (error, response, body) {
       assert(error == null, 'Error connecting to host');
       expect(response.statusCode).to.equal(200);
@@ -52,7 +46,7 @@ describe('Http tests', function () {
       }),
       dom = promisify(jsdom.env);
 
-  it('Should load # of packages with Promises', function (done) {
+  it('Should load # of releases with Promises', function (done) {
     http('http://nodejs.org/dist/').then(function (response) {
       expect(response.statusCode).to.equal(200);
       return dom(response.body);
@@ -62,4 +56,18 @@ describe('Http tests', function () {
       done();
     });
   });
+
+  var co = require('co');
+  it('Should load # of releases with Generators', function (done) {
+    co(function *() {
+      var response = yield http('http://nodejs.org/dist/');
+      expect(response.statusCode).to.equal(200);
+      var window = yield dom(response.body);
+      var releaseCount = window.document.querySelectorAll("a").length;
+      expect(releaseCount).to.be.greaterThan(200);
+    }).then(function () {
+      done();
+    });
+  });
+
 });

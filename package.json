@@ -6,18 +6,16 @@
   "scripts": {
     "subtask1": "a & b",
     "task": "subtask1 && subtask2",
-    "watch": "mocha watch --recursive --reporter min --timeout 10000",
-    "test": "mocha --recursive --reporter nyan --timeout 10000"
+    "watch": "mocha watch --harmony --recursive --reporter min --timeout 10000",
+    "test": "mocha --harmony --recursive --reporter nyan --timeout 10000"
   },
   "author": "",
   "license": "ISC",
   "dependencies": {
-    "bluebird": "^2.3.11",
     "engine.io-stream": "^0.4.3"
   },
   "devDependencies": {
     "chai": "^1.10.0",
-    "jsdom": "^1.4.1",
     "mocha": "^2.0.1"
   }
 }
