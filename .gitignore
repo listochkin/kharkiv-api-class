@@ -1,1 +1,3 @@
 .node
+node_modules/engine.io-stream/node_modules/engine.io-client/node_modules/ws/build/
+node_modules/engine.io-stream/node_modules/engine.io/node_modules/ws/build
